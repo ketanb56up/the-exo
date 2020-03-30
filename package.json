@@ -1,0 +1,22 @@
+{
+  "name": "test-game",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && yarn start",
+    "server": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"yarn server\" \"yarn client\""
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "sequelize": "^5.21.5"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
+  },
+  "author": "",
+  "license": "ISC"
+}
